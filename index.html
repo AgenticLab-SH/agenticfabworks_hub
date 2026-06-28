@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="naver-site-verification" content="1186c844f5dfb20e661721c2b68725f8cbddb9ed" />
+    <title>AgenticFabWorks — AI 에이전트로 만드는 실전 도구 제작소</title>
+    <meta name="description" content="AgenticFabWorks는 AI 에이전트로 쓸모 있는 웹 도구를 만드는 제작소입니다. SKCT 연습 도구를 비롯한 무료 실전 도구를 제공합니다.">
+    <meta name="keywords" content="AgenticFabWorks, AI 에이전트, 웹 도구, SKCT, 취업 도구, 무료 도구">
+    <link rel="canonical" href="https://agenticfabworks.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AgenticFabWorks — AI로 만드는 실전 도구 제작소">
+    <meta property="og:description" content="AI 에이전트로 쓸모 있는 웹 도구를 만드는 제작소. 무료 실전 도구 모음.">
+    <meta property="og:url" content="https://agenticfabworks.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLHB1RM91X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZLHB1RM91X');
+    </script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2566168559344675" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AgenticFabWorks",
+      "url": "https://agenticfabworks.com/",
+      "description": "AI 에이전트로 쓸모 있는 웹 도구를 만드는 제작소",
+      "sameAs": ["https://github.com/AgenticLab-SH"]
+    }
+    </script>
+    <style>
+        :root {
+            --bg: #0b1120;
+            --bg-soft: #111a2e;
+            --card: rgba(255,255,255,0.04);
+            --card-border: rgba(148,163,184,0.18);
+            --text: #e8eefb;
+            --muted: #93a4c3;
+            --blue: #3b82f6;
+            --cyan: #22d3ee;
+            --radius: 18px;
+            --max: 1080px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: "Pretendard", system-ui, sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(900px 500px at 15% -10%, rgba(59,130,246,0.20), transparent 60%),
+                radial-gradient(800px 460px at 95% 0%, rgba(34,211,238,0.14), transparent 55%),
+                linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+            min-height: 100vh;
+            line-height: 1.55;
+            -webkit-font-smoothing: antialiased;
+        }
+        .wrap { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
+        header {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 22px 0;
+        }
+        .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 18px; letter-spacing: -0.2px; }
+        .brand .dot { width: 26px; height: 26px; border-radius: 8px;
+            background: linear-gradient(135deg, var(--blue), var(--cyan));
+            box-shadow: 0 6px 18px rgba(34,211,238,0.35); }
+        nav a { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 18px; }
+        nav a:hover { color: var(--text); }
+        .hero { padding: 70px 0 48px; text-align: center; }
+        .eyebrow {
+            display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 0.4px;
+            color: var(--cyan); background: rgba(34,211,238,0.10);
+            border: 1px solid rgba(34,211,238,0.25); padding: 6px 14px; border-radius: 999px; margin-bottom: 22px;
+        }
+        h1 { font-size: clamp(30px, 5.2vw, 52px); font-weight: 800; letter-spacing: -1px; line-height: 1.12; }
+        h1 .grad { background: linear-gradient(120deg, var(--blue), var(--cyan)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .lead { max-width: 620px; margin: 22px auto 0; color: var(--muted); font-size: 18px; }
+        .cta-row { margin-top: 32px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .btn {
+            display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+            padding: 13px 22px; border-radius: 12px; font-weight: 700; font-size: 15px;
+        }
+        .btn-primary { background: linear-gradient(120deg, var(--blue), var(--cyan)); color: #04121f; box-shadow: 0 12px 30px rgba(34,211,238,0.28); }
+        .btn-ghost { background: var(--card); color: var(--text); border: 1px solid var(--card-border); }
+        .section-title { font-size: 14px; font-weight: 700; color: var(--muted); letter-spacing: 0.6px; text-transform: uppercase; margin: 60px 0 18px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+        .card {
+            background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
+            padding: 22px; text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 10px;
+            transition: transform 0.15s ease, border-color 0.15s ease;
+        }
+        .card.live:hover { transform: translateY(-3px); border-color: rgba(34,211,238,0.5); }
+        .card .ico { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; font-size: 20px;
+            background: rgba(59,130,246,0.14); border: 1px solid rgba(59,130,246,0.3); }
+        .card h3 { font-size: 17px; font-weight: 700; }
+        .card p { color: var(--muted); font-size: 14px; }
+        .badge { align-self: flex-start; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 999px; }
+        .badge.on { color: #04121f; background: var(--cyan); }
+        .badge.soon { color: var(--muted); background: rgba(148,163,184,0.16); border: 1px solid var(--card-border); }
+        footer { margin: 70px 0 40px; padding-top: 24px; border-top: 1px solid var(--card-border); color: var(--muted); font-size: 13px; text-align: center; }
+        footer a { color: var(--muted); }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="brand"><span class="dot"></span> AgenticFabWorks</div>
+            <nav>
+                <a href="#services">서비스</a>
+                <a href="https://github.com/AgenticLab-SH" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <span class="eyebrow">AI AGENT · FABRICATION WORKS</span>
+            <h1>AI 에이전트로 만드는<br><span class="grad">쓸모 있는 실전 도구</span></h1>
+            <p class="lead">AgenticFabWorks는 AI 에이전트를 활용해 실제로 도움이 되는 웹 도구를 만들어 무료로 공개하는 제작소입니다.</p>
+            <div class="cta-row">
+                <a class="btn btn-primary" href="https://skct.agenticfabworks.com/">SKCT 연습 도구 열기</a>
+                <a class="btn btn-ghost" href="#services">전체 서비스 보기</a>
+            </div>
+        </section>
+
+        <h2 class="section-title" id="services">제작된 도구</h2>
+        <div class="grid">
+            <a class="card live" href="https://skct.agenticfabworks.com/">
+                <div class="ico">📝</div>
+                <span class="badge on">LIVE</span>
+                <h3>SKCT 온라인 연습 도구</h3>
+                <p>SK그룹 인적성검사(SKCT)를 실전 환경으로 연습. OMR·다중 타이머·자동 채점·통계.</p>
+            </a>
+            <a class="card live" href="https://tools.agenticfabworks.com/salary/">
+                <div class="ico">💰</div>
+                <span class="badge on">LIVE</span>
+                <h3>연봉 실수령액 계산기</h3>
+                <p>2026년 기준 4대보험·소득세를 반영한 월 실수령액을 즉시 계산.</p>
+            </a>
+            <a class="card live" href="https://tools.agenticfabworks.com/dday/">
+                <div class="ico">📅</div>
+                <span class="badge on">LIVE</span>
+                <h3>D-Day 계산기</h3>
+                <p>시험·면접·입사일까지 남은 날짜를 한눈에. 여러 일정 동시 관리.</p>
+            </a>
+            <div class="card">
+                <div class="ico">🛠️</div>
+                <span class="badge soon">준비중</span>
+                <h3>다음 도구</h3>
+                <p>새로운 실전 도구를 계속 추가합니다.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 AgenticFabWorks · <a href="https://skct.agenticfabworks.com/privacy/">개인정보 처리 안내</a></p>
+        </footer>
+    </div>
+</body>
+</html>
