@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="naver-site-verification" content="2c169a010d107c10c4d70b47fc9db986b5bde208" />
     <title>AgenticFabWorks — AI 에이전트로 만드는 실전 도구 제작소</title>
-    <meta name="description" content="AgenticFabWorks는 AI 에이전트로 쓸모 있는 웹 도구를 만드는 제작소입니다. SKCT 연습 도구를 비롯한 무료 실전 도구를 제공합니다.">
+    <meta name="description" content="AgenticFabWorks는 SKCT 온라인 연습 도구와 생활 계산기를 만드는 개인 제작 웹 도구 허브입니다. SKCT 연습 도구는 OMR, 타이머, 메모장, 채점, 복기 기록을 제공합니다.">
     <meta name="keywords" content="AgenticFabWorks, AI 에이전트, 웹 도구, SKCT, 취업 도구, 무료 도구">
     <link rel="canonical" href="https://agenticfabworks.com/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="AgenticFabWorks — AI로 만드는 실전 도구 제작소">
-    <meta property="og:description" content="AI 에이전트로 쓸모 있는 웹 도구를 만드는 제작소. 무료 실전 도구 모음.">
+    <meta property="og:description" content="SKCT 온라인 연습 도구와 무료 생활 계산기를 제공하는 개인 제작 웹 도구 허브입니다.">
     <meta property="og:url" content="https://agenticfabworks.com/">
     <meta name="twitter:card" content="summary_large_image">
     <!-- Google tag (gtag.js) -->
@@ -90,6 +90,33 @@
         .btn-ghost { background: var(--card); color: var(--text); border: 1px solid var(--card-border); }
         .section-title { font-size: 14px; font-weight: 700; color: var(--muted); letter-spacing: 0.6px; text-transform: uppercase; margin: 60px 0 18px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+        .spotlight {
+            display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr); gap: 18px;
+            margin: 18px 0 12px;
+        }
+        .panel {
+            background: rgba(255,255,255,0.055); border: 1px solid var(--card-border);
+            border-radius: var(--radius); padding: 24px;
+        }
+        .panel h2 { font-size: 24px; margin-bottom: 10px; letter-spacing: -0.2px; }
+        .panel h3 { font-size: 16px; margin-bottom: 8px; }
+        .panel p { color: var(--muted); font-size: 14px; }
+        .feature-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }
+        .feature-list li {
+            list-style: none; padding: 10px 12px; border-radius: 12px;
+            background: rgba(15,23,42,0.38); border: 1px solid rgba(148,163,184,0.16);
+            color: #cbd5e1; font-size: 13px;
+        }
+        .doc-links { display: grid; gap: 10px; margin-top: 14px; }
+        .doc-links a {
+            color: var(--text); text-decoration: none; padding: 10px 12px; border-radius: 12px;
+            background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.22); font-size: 13px; font-weight: 700;
+        }
+        .notice {
+            margin-top: 14px; padding: 12px 14px; border-radius: 12px;
+            background: rgba(250,204,21,0.10); border: 1px solid rgba(250,204,21,0.22);
+            color: #fde68a; font-size: 13px;
+        }
         .card {
             background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
             padding: 22px; text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 10px;
@@ -105,6 +132,11 @@
         .badge.soon { color: var(--muted); background: rgba(148,163,184,0.16); border: 1px solid var(--card-border); }
         footer { margin: 70px 0 40px; padding-top: 24px; border-top: 1px solid var(--card-border); color: var(--muted); font-size: 13px; text-align: center; }
         footer a { color: var(--muted); }
+        @media (max-width: 760px) {
+            .spotlight { grid-template-columns: 1fr; }
+            .feature-list { grid-template-columns: 1fr; }
+            nav a { margin-left: 10px; }
+        }
     </style>
 </head>
 <body>
@@ -113,6 +145,8 @@
             <div class="brand"><span class="dot"></span> AgenticFabWorks</div>
             <nav>
                 <a href="#services">서비스</a>
+                <a href="#skct">SKCT 도구</a>
+                <a href="#policy">운영 기준</a>
                 <a href="https://github.com/AgenticLab-SH" target="_blank" rel="noopener">GitHub</a>
             </nav>
         </header>
@@ -120,11 +154,59 @@
         <section class="hero">
             <span class="eyebrow">AI AGENT · FABRICATION WORKS</span>
             <h1>AI 에이전트로 만드는<br><span class="grad">쓸모 있는 실전 도구</span></h1>
-            <p class="lead">AgenticFabWorks는 AI 에이전트를 활용해 실제로 도움이 되는 웹 도구를 만들어 무료로 공개하는 제작소입니다.</p>
+            <p class="lead">AgenticFabWorks는 SKCT 온라인 연습 도구와 생활 계산기를 직접 만들고 운영하는 개인 제작 웹 도구 허브입니다.</p>
             <div class="cta-row">
                 <a class="btn btn-primary" href="https://skct.agenticfabworks.com/">SKCT 연습 도구 열기</a>
                 <a class="btn btn-ghost" href="#services">전체 서비스 보기</a>
             </div>
+        </section>
+
+        <h2 class="section-title" id="skct">대표 서비스</h2>
+        <section class="spotlight" aria-label="SKCT 온라인 연습 도구 소개">
+            <article class="panel">
+                <h2>SKCT 온라인 연습 도구</h2>
+                <p>
+                    사용자가 가진 문제 자료를 실제 온라인 검사 흐름에 맞춰 연습할 수 있도록 만든 웹 도구입니다.
+                    OMR, 과목별 타이머, 메모장, 그림판, 계산기, 채점, 문항별 통계를 한 화면에서 제공합니다.
+                </p>
+                <ul class="feature-list">
+                    <li>일반 모드: OMR·타이머·메모장·계산기 무료 제공</li>
+                    <li>고급 모드: 실제에 가까운 폭과 우측 여백, 팝업 연습 배치</li>
+                    <li>복기 기능: 정답 입력, CBT 정답률, 과목별 통계, TXT/CSV 저장</li>
+                    <li>기록 보관함: 회차 기록, 성장 그래프, 오답노트, 복기 메모 저장</li>
+                </ul>
+                <div class="notice">
+                    SK그룹 또는 SKCT 공식 운영기관과 제휴된 서비스가 아닌 개인 제작 연습 도구입니다. 공식 문제나 기출 문제를 제공하지 않습니다.
+                </div>
+            </article>
+            <aside class="panel">
+                <h3>SKCT 문서 바로가기</h3>
+                <p>사용법, 기능 범위, 문의와 책임 범위를 루트 도메인에서도 바로 확인할 수 있게 연결했습니다.</p>
+                <div class="doc-links">
+                    <a href="https://skct.agenticfabworks.com/about/">소개</a>
+                    <a href="https://skct.agenticfabworks.com/guide/">연습 가이드</a>
+                    <a href="https://skct.agenticfabworks.com/faq/">자주 묻는 질문</a>
+                    <a href="https://skct.agenticfabworks.com/pricing/">고급 기능 안내</a>
+                    <a href="https://skct.agenticfabworks.com/contact/">문의하기</a>
+                </div>
+            </aside>
+        </section>
+
+        <h2 class="section-title" id="policy">운영 기준</h2>
+        <section class="spotlight" aria-label="운영 기준과 광고 원칙">
+            <article class="panel">
+                <h3>콘텐츠 기준</h3>
+                <p>
+                    AgenticFabWorks의 문서와 도구 설명은 직접 작성한 안내입니다. 각 도구는 사용자가 목적을 빠르게 달성하도록 설계하며,
+                    기능이 불안정하거나 안내가 부족한 화면은 정식 기능처럼 홍보하지 않습니다.
+                </p>
+            </article>
+            <article class="panel">
+                <h3>광고 기준</h3>
+                <p>
+                    광고는 가이드, FAQ, 소개처럼 읽는 페이지 위주로 제한합니다. SKCT 고급 모드, 팝업 풀이창, 채팅이나 집중 풀이 화면에는 광고를 넣지 않는 방향으로 운영합니다.
+                </p>
+            </article>
         </section>
 
         <h2 class="section-title" id="services">제작된 도구</h2>
