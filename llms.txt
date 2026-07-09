@@ -1,0 +1,26 @@
+# AgenticFabWorks
+
+AgenticFabWorks is a Korean web tool hub operated as an independent personal project.
+The main service is the SKCT online practice tool.
+
+## Main URLs
+
+- Home: https://agenticfabworks.com/
+- SKCT representative service: https://agenticfabworks.com/skct/
+- SKCT guide: https://agenticfabworks.com/skct/guide/
+- SKCT FAQ: https://agenticfabworks.com/skct/faq/
+- Contact: https://agenticfabworks.com/contact/
+- Privacy: https://agenticfabworks.com/privacy/
+- Terms: https://agenticfabworks.com/terms/
+- Live SKCT tool: https://skct.agenticfabworks.com/
+
+## Service Summary
+
+The SKCT practice tool provides an online practice layout with OMR marking, timers, memo tools, calculator, scoring, per-question statistics, and advanced review records.
+It does not provide official SKCT questions, past questions, or copyrighted problem text.
+It is not affiliated with SK Group or any official SKCT operator.
+
+## Advertising Principle
+
+Ads are intended for document-like pages such as guides, FAQ, introduction, and policy pages.
+Ads are not intended for advanced mode, popup practice windows, chat, archive, or focused practice screens.
