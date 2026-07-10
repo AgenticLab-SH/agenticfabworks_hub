@@ -1,7 +1,8 @@
 # AgenticFabWorks
 
 AgenticFabWorks is a Korean web tool hub operated as an independent personal project.
-The main service is the SKCT online practice tool.
+It provides free tools for SKCT practice, job preparation, schedules, finance, and everyday calculations.
+The representative service is the SKCT online practice tool.
 
 ## Main URLs
 

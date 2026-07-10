@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="naver-site-verification" content="2c169a010d107c10c4d70b47fc9db986b5bde208" />
-    <title>SKCT 온라인 연습 도구 | AgenticFabWorks</title>
-    <meta name="description" content="AgenticFabWorks의 대표 서비스는 SKCT 온라인 연습 도구입니다. OMR, 타이머, 메모장, 계산기, 채점, 복기 기록을 한 화면에서 제공합니다.">
-    <meta name="keywords" content="AgenticFabWorks, AI 에이전트, 웹 도구, SKCT, 취업 도구, 무료 도구">
+    <title>무료 웹 도구 모음 | AgenticFabWorks</title>
+    <meta name="description" content="AgenticFabWorks는 SKCT 온라인 연습 도구를 비롯해 취업, 일정, 금융, 생활 계산을 돕는 무료 웹 도구를 직접 만들고 운영합니다.">
+    <meta name="keywords" content="AgenticFabWorks, 무료 웹 도구, SKCT 연습, 취업 도구, 계산기">
     <link rel="canonical" href="https://agenticfabworks.com/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="SKCT 온라인 연습 도구 | AgenticFabWorks">
-    <meta property="og:description" content="OMR, 타이머, 메모장, 계산기, 채점, 복기 기록을 제공하는 SKCT 연습 도구입니다.">
+    <meta property="og:title" content="무료 웹 도구 모음 | AgenticFabWorks">
+    <meta property="og:description" content="SKCT 연습, 취업 준비, 일정 관리, 금융·생활 계산을 위한 무료 웹 도구 모음입니다.">
     <meta property="og:url" content="https://agenticfabworks.com/">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="무료 웹 도구 모음 | AgenticFabWorks">
+    <meta name="twitter:description" content="SKCT 연습, 취업 준비, 일정 관리, 금융·생활 계산을 위한 무료 웹 도구 모음입니다.">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLHB1RM91X"></script>
     <script>
@@ -31,8 +33,18 @@
       "@type": "Organization",
       "name": "AgenticFabWorks",
       "url": "https://agenticfabworks.com/",
-      "description": "SKCT 온라인 연습 도구를 대표 서비스로 운영하는 개인 제작 웹 도구 허브",
+      "description": "SKCT 온라인 연습과 취업, 일정, 금융, 생활 계산을 돕는 무료 웹 도구 허브",
       "sameAs": ["https://github.com/AgenticLab-SH"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AgenticFabWorks",
+      "url": "https://agenticfabworks.com/",
+      "inLanguage": "ko",
+      "description": "직접 만들고 운영하는 무료 웹 도구 모음"
     }
     </script>
     <script type="application/ld+json">
@@ -135,6 +147,10 @@
             background: rgba(250,204,21,0.10); border: 1px solid rgba(250,204,21,0.22);
             color: #fde68a; font-size: 13px;
         }
+        .purpose-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+        .purpose-card { background: rgba(255,255,255,0.045); border: 1px solid var(--card-border); border-radius: 15px; padding: 19px; }
+        .purpose-card h2 { font-size: 17px; margin-bottom: 7px; }
+        .purpose-card p { color: var(--muted); font-size: 14px; }
         .card {
             background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
             padding: 22px; text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 10px;
@@ -153,6 +169,7 @@
         @media (max-width: 760px) {
             .spotlight { grid-template-columns: 1fr; }
             .feature-list { grid-template-columns: 1fr; }
+            .purpose-grid { grid-template-columns: 1fr; }
             nav a { margin-left: 10px; }
         }
     </style>
@@ -170,13 +187,29 @@
         </header>
 
         <section class="hero">
-            <span class="eyebrow">대표 서비스 · SKCT 온라인 연습 도구</span>
-            <h1>OMR, 타이머, 복기를 한 화면에 둔<br><span class="grad">SKCT 온라인 연습 도구</span></h1>
-            <p class="lead">AgenticFabWorks는 SKCT 연습 도구를 중심으로 운영되는 개인 제작 웹 도구 허브입니다. 사용자가 가진 문제 자료를 온라인 검사 흐름에 가깝게 풀고, 채점과 복기 기록까지 이어갈 수 있게 합니다.</p>
+            <span class="eyebrow">직접 만들고 운영하는 무료 웹 도구</span>
+            <h1>반복 작업은 줄이고,<br><span class="grad">필요한 결과는 더 빠르게</span></h1>
+            <p class="lead">AgenticFabWorks는 SKCT 온라인 연습을 비롯해 취업 준비, 일정 관리, 금융·생활 계산에 바로 쓸 수 있는 웹 도구를 만들고 운영합니다.</p>
             <div class="cta-row">
                 <a class="btn btn-primary" href="https://skct.agenticfabworks.com/">SKCT 연습 도구 열기</a>
                 <a class="btn btn-ghost" href="skct/">SKCT 소개 보기</a>
             </div>
+        </section>
+
+        <h2 class="section-title">목적별로 바로 찾기</h2>
+        <section class="purpose-grid" aria-label="도구 선택 안내">
+            <article class="purpose-card">
+                <h2>SKCT·취업 준비</h2>
+                <p>SKCT 온라인 연습, 글자수 확인, 연봉 실수령액 계산처럼 지원과 시험 준비에 필요한 도구를 모았습니다.</p>
+            </article>
+            <article class="purpose-card">
+                <h2>일정·생활 계산</h2>
+                <p>D-Day, 만 나이, 단위·평수·퍼센트 변환처럼 자주 찾지만 매번 계산하기 번거로운 작업을 줄입니다.</p>
+            </article>
+            <article class="purpose-card">
+                <h2>금융 계산</h2>
+                <p>복리, 대출 이자, 평단가, 환율과 손실 복구율을 입력 즉시 계산하고 비교할 수 있습니다.</p>
+            </article>
         </section>
 
         <h2 class="section-title" id="skct">대표 서비스</h2>
