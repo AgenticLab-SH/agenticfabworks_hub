@@ -6,17 +6,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="naver-site-verification" content="2c169a010d107c10c4d70b47fc9db986b5bde208">
-    <title>AgenticFabWorks | 취업 준비와 생활에 바로 쓰는 웹 도구</title>
-    <meta name="description" content="SKCT 온라인 연습, 글자수 확인, 일정과 금융·생활 계산까지. 설치 없이 바로 쓸 수 있는 무료 웹 도구를 직접 만들고 운영합니다.">
+    <title>AgenticFabWorks | 필요한 순간에 바로 쓰는 웹 도구</title>
+    <meta name="description" content="SKCT 온라인 연습, 글자수 확인, 일정과 금융·생활 계산까지. 추천 도구부터 간결하게 찾고 설치 없이 바로 사용하세요.">
     <meta name="keywords" content="AgenticFabWorks, 무료 웹 도구, SKCT 연습, 취업 도구, 계산기">
     <link rel="canonical" href="https://agenticfabworks.com/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="AgenticFabWorks | 필요한 웹 도구를 바로">
-    <meta property="og:description" content="취업 준비와 일상 계산에 필요한 웹 도구를 회원가입과 설치 없이 사용하세요.">
+    <meta property="og:title" content="AgenticFabWorks | 작은 불편을 줄이는 정돈된 웹 도구">
+    <meta property="og:description" content="취업 준비와 일상 계산에 필요한 기능을 추천 도구부터 간결하게 찾아 바로 사용하세요.">
     <meta property="og:url" content="https://agenticfabworks.com/">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="AgenticFabWorks | 필요한 웹 도구를 바로">
-    <meta name="twitter:description" content="SKCT 온라인 연습부터 금융·생활 계산까지, 필요한 기능만 골라 바로 사용하세요.">
+    <meta property="og:site_name" content="AgenticFabWorks">
+    <meta property="og:image" content="https://agenticfabworks.com/agenticfabworks-share-20260711.png">
+    <meta property="og:image:secure_url" content="https://agenticfabworks.com/agenticfabworks-share-20260711.png">
+    <meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AgenticFabWorks의 SKCT 연습과 생활 웹 도구 카드">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AgenticFabWorks | 작은 불편을 줄이는 정돈된 웹 도구">
+    <meta name="twitter:description" content="SKCT 온라인 연습부터 금융·생활 계산까지, 추천 도구부터 바로 사용하세요.">
+    <meta name="twitter:image" content="https://agenticfabworks.com/agenticfabworks-share-20260711.png">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="stylesheet" as="style" integrity="sha384-uGEvnSEpW2nM9xJFsrxrwakwrk9QdDTQIBJh0hVMu90OaVyMAMpAK1rIn0/Kh1/k" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
     <link rel="stylesheet" href="docs.css?v=2026071101">
@@ -43,7 +48,7 @@
             <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="siteNav" aria-label="메뉴 열기"><span></span></button>
             <nav class="site-nav" id="siteNav" data-site-nav aria-label="주요 메뉴">
                 <a href="#skct">SKCT</a>
-                <a href="#tools">전체 도구</a>
+                <a href="#tools">필요한 도구</a>
                 <a href="skct/guide/">사용법</a>
                 <a href="contact/">문의</a>
             </nav>
@@ -100,22 +105,26 @@
         <section class="section" id="tools">
             <div class="shell">
                 <div class="section-head" data-reveal>
-                    <div><span class="section-kicker">All tools</span><h2 class="section-title">필요한 도구만 골라보세요.</h2></div>
-                    <div class="tool-filter" aria-label="도구 종류 필터">
-                        <button class="filter-button" type="button" data-tool-filter="all" aria-pressed="true">전체</button>
-                        <button class="filter-button" type="button" data-tool-filter="career" aria-pressed="false">취업·일정</button>
-                        <button class="filter-button" type="button" data-tool-filter="finance" aria-pressed="false">금융</button>
-                        <button class="filter-button" type="button" data-tool-filter="life" aria-pressed="false">생활</button>
+                    <div><span class="section-kicker">Useful tools</span><h2 class="section-title">추천 도구부터 가볍게 찾아보세요.</h2></div>
+                    <div class="tool-controls">
+                        <label class="tool-search"><span class="sr-only">도구 검색</span><input id="toolSearchInput" type="search" placeholder="도구 이름 검색" autocomplete="off"><b aria-hidden="true">⌕</b></label>
+                        <div class="tool-filter" aria-label="도구 종류 필터">
+                            <button class="filter-button" type="button" data-tool-filter="featured" aria-pressed="true">추천</button>
+                            <button class="filter-button" type="button" data-tool-filter="all" aria-pressed="false">전체</button>
+                            <button class="filter-button" type="button" data-tool-filter="career" aria-pressed="false">취업·일정</button>
+                            <button class="filter-button" type="button" data-tool-filter="finance" aria-pressed="false">금융</button>
+                            <button class="filter-button" type="button" data-tool-filter="life" aria-pressed="false">생활</button>
+                        </div>
                     </div>
                 </div>
-                <p id="toolFilterStatus" class="sr-only" aria-live="polite">17개 도구가 표시됩니다.</p>
+                <p id="toolFilterStatus" class="tool-status" aria-live="polite">자주 쓰는 6개 도구를 먼저 보여드립니다.</p>
                 <div class="tools-grid" data-reveal>
-                    <a class="tool-card" data-tool-category="career" href="https://skct.agenticfabworks.com/"><span class="tool-code">SK</span><h3>SKCT 온라인 연습</h3><p>문제 자료 옆에서 타이머와 화면 도구를 연습합니다.</p><span class="arrow">↗</span></a>
-                    <a class="tool-card" data-tool-category="career" href="https://tools.agenticfabworks.com/charcount/"><span class="tool-code">글</span><h3>글자수 세기</h3><p>공백 포함·제외, 바이트와 단어 수를 바로 확인합니다.</p><span class="arrow">↗</span></a>
-                    <a class="tool-card" data-tool-category="career" href="https://tools.agenticfabworks.com/salary/"><span class="tool-code">₩</span><h3>연봉 실수령액</h3><p>급여와 공제 항목을 기준으로 월 실수령액을 계산합니다.</p><span class="arrow">↗</span></a>
-                    <a class="tool-card" data-tool-category="career" href="https://tools.agenticfabworks.com/dday/"><span class="tool-code">D</span><h3>D-Day 계산기</h3><p>시험, 면접과 입사일까지 남은 날짜를 확인합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="career" data-featured="true" href="https://skct.agenticfabworks.com/"><span class="tool-code">SK</span><h3>SKCT 온라인 연습</h3><p>문제 자료 옆에서 타이머와 화면 도구를 연습합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="career" data-featured="true" href="https://tools.agenticfabworks.com/charcount/"><span class="tool-code">글</span><h3>글자수 세기</h3><p>공백 포함·제외, 바이트와 단어 수를 바로 확인합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="career" data-featured="true" href="https://tools.agenticfabworks.com/salary/"><span class="tool-code">₩</span><h3>연봉 실수령액</h3><p>급여와 공제 항목을 기준으로 월 실수령액을 계산합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="career" data-featured="true" href="https://tools.agenticfabworks.com/dday/"><span class="tool-code">D</span><h3>D-Day 계산기</h3><p>시험, 면접과 입사일까지 남은 날짜를 확인합니다.</p><span class="arrow">↗</span></a>
                     <a class="tool-card" data-tool-category="finance" href="https://tools.agenticfabworks.com/average/"><span class="tool-code">평단</span><h3>주식 평단가</h3><p>추가 매수 뒤 평균단가와 목표 평단을 계산합니다.</p><span class="arrow">↗</span></a>
-                    <a class="tool-card" data-tool-category="finance" href="https://tools.agenticfabworks.com/compound/"><span class="tool-code">복리</span><h3>복리 계산기</h3><p>원금, 이율, 기간과 적립액으로 만기 금액을 봅니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="finance" data-featured="true" href="https://tools.agenticfabworks.com/compound/"><span class="tool-code">복리</span><h3>복리 계산기</h3><p>원금, 이율, 기간과 적립액으로 만기 금액을 봅니다.</p><span class="arrow">↗</span></a>
                     <a class="tool-card" data-tool-category="finance" href="https://tools.agenticfabworks.com/loan/"><span class="tool-code">대출</span><h3>대출 이자</h3><p>상환 방식에 따른 월 납입액과 총이자를 비교합니다.</p><span class="arrow">↗</span></a>
                     <a class="tool-card" data-tool-category="finance" href="https://tools.agenticfabworks.com/recovery/"><span class="tool-code">회복</span><h3>손실 복구율</h3><p>손실 뒤 원금 회복에 필요한 상승률을 계산합니다.</p><span class="arrow">↗</span></a>
                     <a class="tool-card" data-tool-category="finance" href="https://tools.agenticfabworks.com/exchange/"><span class="tool-code">FX</span><h3>환율 계산기</h3><p>통화 금액을 원하는 환율로 빠르게 환산합니다.</p><span class="arrow">↗</span></a>
@@ -125,7 +134,7 @@
                     <a class="tool-card" data-tool-category="life" href="https://tools.agenticfabworks.com/severance/"><span class="tool-code">퇴직</span><h3>퇴직금 계산기</h3><p>근무 기간과 급여를 기준으로 예상 금액을 봅니다.</p><span class="arrow">↗</span></a>
                     <a class="tool-card" data-tool-category="life" href="https://tools.agenticfabworks.com/bmi/"><span class="tool-code">BMI</span><h3>BMI 계산기</h3><p>키와 몸무게로 체질량지수와 표준체중을 확인합니다.</p><span class="arrow">↗</span></a>
                     <a class="tool-card" data-tool-category="life" href="https://tools.agenticfabworks.com/pyeong/"><span class="tool-code">㎡</span><h3>평수 계산기</h3><p>제곱미터와 평을 서로 변환합니다.</p><span class="arrow">↗</span></a>
-                    <a class="tool-card" data-tool-category="life" href="https://tools.agenticfabworks.com/percent/"><span class="tool-code">%</span><h3>퍼센트 계산기</h3><p>증감률, 비율과 일부 값을 빠르게 계산합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="life" data-featured="true" href="https://tools.agenticfabworks.com/percent/"><span class="tool-code">%</span><h3>퍼센트 계산기</h3><p>증감률, 비율과 일부 값을 빠르게 계산합니다.</p><span class="arrow">↗</span></a>
                     <a class="tool-card" data-tool-category="life" href="https://tools.agenticfabworks.com/unit/"><span class="tool-code">단위</span><h3>단위 변환기</h3><p>자주 쓰는 길이와 무게 단위를 변환합니다.</p><span class="arrow">↗</span></a>
                 </div>
             </div>

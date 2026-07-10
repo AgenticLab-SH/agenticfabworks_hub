@@ -22,19 +22,38 @@
     const filterButtons = [...document.querySelectorAll('[data-tool-filter]')];
     const toolCards = [...document.querySelectorAll('[data-tool-category]')];
     const filterStatus = document.getElementById('toolFilterStatus');
+    const toolSearchInput = document.getElementById('toolSearchInput');
+    let activeFilter = 'featured';
+
+    const applyToolView = () => {
+        const query = String(toolSearchInput?.value || '').trim().toLocaleLowerCase('ko-KR');
+        let visible = 0;
+        toolCards.forEach((card) => {
+            const matchesText = !query || String(card.textContent || '').toLocaleLowerCase('ko-KR').includes(query);
+            const matchesFilter = query
+                || activeFilter === 'all'
+                || (activeFilter === 'featured' && card.dataset.featured === 'true')
+                || card.dataset.toolCategory === activeFilter;
+            const show = Boolean(matchesText && matchesFilter);
+            card.hidden = !show;
+            if (show) visible += 1;
+        });
+        if (!filterStatus) return;
+        if (query) filterStatus.textContent = visible ? `검색 결과 ${visible}개 도구` : '일치하는 도구가 없습니다.';
+        else if (activeFilter === 'featured') filterStatus.textContent = '자주 쓰는 6개 도구를 먼저 보여드립니다.';
+        else filterStatus.textContent = `${visible}개 도구가 표시됩니다.`;
+    };
+
     filterButtons.forEach((button) => {
         button.addEventListener('click', () => {
-            const filter = button.dataset.toolFilter || 'all';
+            activeFilter = button.dataset.toolFilter || 'all';
             filterButtons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
-            let visible = 0;
-            toolCards.forEach((card) => {
-                const show = filter === 'all' || card.dataset.toolCategory === filter;
-                card.hidden = !show;
-                if (show) visible += 1;
-            });
-            if (filterStatus) filterStatus.textContent = `${visible}개 도구가 표시됩니다.`;
+            if (toolSearchInput) toolSearchInput.value = '';
+            applyToolView();
         });
     });
+    toolSearchInput?.addEventListener('input', applyToolView);
+    applyToolView();
 
     const revealTargets = document.querySelectorAll('[data-reveal]');
     if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

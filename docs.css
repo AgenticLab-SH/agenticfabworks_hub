@@ -149,7 +149,14 @@ button, input { font: inherit; }
 .preview-calc i { height: 26px; border-radius: 7px; background: #292526; }
 .preview-calc i:nth-child(4n) { background: linear-gradient(135deg, var(--red-deep), var(--orange)); }
 
-.tool-filter { display: flex; flex-wrap: wrap; gap: 8px; }
+.tool-controls { display:grid; justify-items:end; gap:10px; }
+.tool-search { width:min(100%,300px); min-height:44px; display:flex; align-items:center; gap:10px; padding:0 13px 0 15px; border:1px solid var(--line); border-radius:14px; background:rgba(255,255,255,.04); transition:border-color .2s,background .2s; }
+.tool-search:focus-within { border-color:rgba(255,107,0,.48); background:rgba(255,107,0,.055); }
+.tool-search input { width:100%; min-width:0; border:0; outline:0; color:var(--text); background:transparent; }
+.tool-search input::placeholder { color:#746d6a; }
+.tool-search b { color:#ff8350; font-size:19px; }
+.tool-filter { display: flex; flex-wrap: wrap; justify-content:flex-end; gap: 8px; }
+.tool-status { margin:-12px 0 20px; color:#8f8885; font-size:13px; }
 .filter-button { min-height: 42px; padding: 0 16px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); background: rgba(255,255,255,.035); cursor: pointer; transition: .2s; }
 .filter-button:hover, .filter-button:focus-visible, .filter-button[aria-pressed="true"] { color: #1b0803; border-color: transparent; background: linear-gradient(112deg, #ff4538, var(--orange)); outline: none; }
 .tools-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
@@ -229,6 +236,8 @@ button, input { font: inherit; }
     .mini-row { grid-template-columns: repeat(2, 1fr); }
     .section { padding: 58px 0; }
     .section-head { align-items: flex-start; flex-direction: column; }
+    .tool-controls { width:100%; justify-items:start; }
+    .tool-filter { justify-content:flex-start; }
     .tools-grid { grid-template-columns: repeat(2, 1fr); }
     .tool-card { min-height: 190px; }
     .principles, .content-grid, .content-grid.three { grid-template-columns: 1fr; }
