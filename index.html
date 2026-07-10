@@ -1,379 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
     <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="naver-site-verification" content="2c169a010d107c10c4d70b47fc9db986b5bde208" />
-    <title>무료 웹 도구 모음 | AgenticFabWorks</title>
-    <meta name="description" content="AgenticFabWorks는 SKCT 온라인 연습 도구를 비롯해 취업, 일정, 금융, 생활 계산을 돕는 무료 웹 도구를 직접 만들고 운영합니다.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="naver-site-verification" content="2c169a010d107c10c4d70b47fc9db986b5bde208">
+    <title>AgenticFabWorks | 취업 준비와 생활에 바로 쓰는 웹 도구</title>
+    <meta name="description" content="SKCT 온라인 연습, 글자수 확인, 일정과 금융·생활 계산까지. 설치 없이 바로 쓸 수 있는 무료 웹 도구를 직접 만들고 운영합니다.">
     <meta name="keywords" content="AgenticFabWorks, 무료 웹 도구, SKCT 연습, 취업 도구, 계산기">
     <link rel="canonical" href="https://agenticfabworks.com/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="무료 웹 도구 모음 | AgenticFabWorks">
-    <meta property="og:description" content="SKCT 연습, 취업 준비, 일정 관리, 금융·생활 계산을 위한 무료 웹 도구 모음입니다.">
+    <meta property="og:title" content="AgenticFabWorks | 필요한 웹 도구를 바로">
+    <meta property="og:description" content="취업 준비와 일상 계산에 필요한 웹 도구를 회원가입과 설치 없이 사용하세요.">
     <meta property="og:url" content="https://agenticfabworks.com/">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="무료 웹 도구 모음 | AgenticFabWorks">
-    <meta name="twitter:description" content="SKCT 연습, 취업 준비, 일정 관리, 금융·생활 계산을 위한 무료 웹 도구 모음입니다.">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLHB1RM91X"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-ZLHB1RM91X');
-    </script>
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2566168559344675" crossorigin="anonymous"></script>
+    <meta name="twitter:title" content="AgenticFabWorks | 필요한 웹 도구를 바로">
+    <meta name="twitter:description" content="SKCT 온라인 연습부터 금융·생활 계산까지, 필요한 기능만 골라 바로 사용하세요.">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="stylesheet" as="style" integrity="sha384-uGEvnSEpW2nM9xJFsrxrwakwrk9QdDTQIBJh0hVMu90OaVyMAMpAK1rIn0/Kh1/k" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" as="style" integrity="sha384-uGEvnSEpW2nM9xJFsrxrwakwrk9QdDTQIBJh0hVMu90OaVyMAMpAK1rIn0/Kh1/k" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+    <link rel="stylesheet" href="docs.css?v=2026071101">
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "AgenticFabWorks",
-      "url": "https://agenticfabworks.com/",
-      "description": "SKCT 온라인 연습과 취업, 일정, 금융, 생활 계산을 돕는 무료 웹 도구 허브",
-      "sameAs": ["https://github.com/AgenticLab-SH"]
-    }
+    {"@context":"https://schema.org","@type":"Organization","name":"AgenticFabWorks","url":"https://agenticfabworks.com/","description":"취업 준비와 생활에 필요한 웹 도구를 직접 만들고 운영하는 개인 프로젝트","sameAs":["https://github.com/AgenticLab-SH"]}
     </script>
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "AgenticFabWorks",
-      "url": "https://agenticfabworks.com/",
-      "inLanguage": "ko",
-      "description": "직접 만들고 운영하는 무료 웹 도구 모음"
-    }
+    {"@context":"https://schema.org","@type":"WebSite","name":"AgenticFabWorks","url":"https://agenticfabworks.com/","inLanguage":"ko","description":"SKCT 온라인 연습과 취업, 일정, 금융, 생활 계산을 위한 웹 도구 모음"}
     </script>
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "SKCT 온라인 연습 도구",
-      "url": "https://skct.agenticfabworks.com/",
-      "description": "OMR, 타이머, 메모장, 계산기, 채점, 복기 기록을 제공하는 SKCT 온라인 연습 도구입니다.",
-      "applicationCategory": "EducationalApplication",
-      "operatingSystem": "Web",
-      "inLanguage": "ko",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@type": "Organization",
-        "name": "AgenticFabWorks",
-        "url": "https://agenticfabworks.com/"
-      }
-    }
+    {"@context":"https://schema.org","@type":"WebApplication","name":"SKCT 온라인 연습 도구","url":"https://skct.agenticfabworks.com/","description":"가지고 있는 문제 자료와 함께 타이머, 화면 계산기, 메모장과 그림판을 연습하는 무료 웹 도구","applicationCategory":"EducationalApplication","operatingSystem":"Web","inLanguage":"ko","isAccessibleForFree":true,"publisher":{"@type":"Organization","name":"AgenticFabWorks","url":"https://agenticfabworks.com/"}}
     </script>
-    <style>
-        :root {
-            --bg: #0b1120;
-            --bg-soft: #111a2e;
-            --card: rgba(255,255,255,0.04);
-            --card-border: rgba(148,163,184,0.18);
-            --text: #e8eefb;
-            --muted: #93a4c3;
-            --blue: #3b82f6;
-            --cyan: #22d3ee;
-            --radius: 18px;
-            --max: 1080px;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: "Pretendard", system-ui, sans-serif;
-            color: var(--text);
-            background:
-                radial-gradient(900px 500px at 15% -10%, rgba(59,130,246,0.20), transparent 60%),
-                radial-gradient(800px 460px at 95% 0%, rgba(34,211,238,0.14), transparent 55%),
-                linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
-            min-height: 100vh;
-            line-height: 1.55;
-            -webkit-font-smoothing: antialiased;
-        }
-        .wrap { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
-        header {
-            display: flex; align-items: center; justify-content: space-between;
-            padding: 22px 0;
-        }
-        .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 18px; letter-spacing: -0.2px; }
-        .brand .dot { width: 26px; height: 26px; border-radius: 8px;
-            background: linear-gradient(135deg, var(--blue), var(--cyan));
-            box-shadow: 0 6px 18px rgba(34,211,238,0.35); }
-        nav a { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 18px; }
-        nav a:hover { color: var(--text); }
-        .hero { padding: 70px 0 48px; text-align: center; }
-        .eyebrow {
-            display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 0.4px;
-            color: var(--cyan); background: rgba(34,211,238,0.10);
-            border: 1px solid rgba(34,211,238,0.25); padding: 6px 14px; border-radius: 999px; margin-bottom: 22px;
-        }
-        h1 { font-size: clamp(30px, 5.2vw, 52px); font-weight: 800; letter-spacing: -1px; line-height: 1.12; }
-        h1 .grad { background: linear-gradient(120deg, var(--blue), var(--cyan)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-        .lead { max-width: 620px; margin: 22px auto 0; color: var(--muted); font-size: 18px; }
-        .cta-row { margin-top: 32px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-        .btn {
-            display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
-            padding: 13px 22px; border-radius: 12px; font-weight: 700; font-size: 15px;
-        }
-        .btn-primary { background: linear-gradient(120deg, var(--blue), var(--cyan)); color: #04121f; box-shadow: 0 12px 30px rgba(34,211,238,0.28); }
-        .btn-ghost { background: var(--card); color: var(--text); border: 1px solid var(--card-border); }
-        .section-title { font-size: 14px; font-weight: 700; color: var(--muted); letter-spacing: 0.6px; text-transform: uppercase; margin: 60px 0 18px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
-        .spotlight {
-            display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr); gap: 18px;
-            margin: 18px 0 12px;
-        }
-        .panel {
-            background: rgba(255,255,255,0.055); border: 1px solid var(--card-border);
-            border-radius: var(--radius); padding: 24px;
-        }
-        .panel h2 { font-size: 24px; margin-bottom: 10px; letter-spacing: -0.2px; }
-        .panel h3 { font-size: 16px; margin-bottom: 8px; }
-        .panel p { color: var(--muted); font-size: 14px; }
-        .feature-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }
-        .feature-list li {
-            list-style: none; padding: 10px 12px; border-radius: 12px;
-            background: rgba(15,23,42,0.38); border: 1px solid rgba(148,163,184,0.16);
-            color: #cbd5e1; font-size: 13px;
-        }
-        .doc-links { display: grid; gap: 10px; margin-top: 14px; }
-        .doc-links a {
-            color: var(--text); text-decoration: none; padding: 10px 12px; border-radius: 12px;
-            background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.22); font-size: 13px; font-weight: 700;
-        }
-        .notice {
-            margin-top: 14px; padding: 12px 14px; border-radius: 12px;
-            background: rgba(250,204,21,0.10); border: 1px solid rgba(250,204,21,0.22);
-            color: #fde68a; font-size: 13px;
-        }
-        .purpose-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-        .purpose-card { background: rgba(255,255,255,0.045); border: 1px solid var(--card-border); border-radius: 15px; padding: 19px; }
-        .purpose-card h2 { font-size: 17px; margin-bottom: 7px; }
-        .purpose-card p { color: var(--muted); font-size: 14px; }
-        .card {
-            background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
-            padding: 22px; text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 10px;
-            transition: transform 0.15s ease, border-color 0.15s ease;
-        }
-        .card.live:hover { transform: translateY(-3px); border-color: rgba(34,211,238,0.5); }
-        .card .ico { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; font-size: 20px;
-            background: rgba(59,130,246,0.14); border: 1px solid rgba(59,130,246,0.3); }
-        .card h3 { font-size: 17px; font-weight: 700; }
-        .card p { color: var(--muted); font-size: 14px; }
-        .badge { align-self: flex-start; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 999px; }
-        .badge.on { color: #04121f; background: var(--cyan); }
-        .badge.soon { color: var(--muted); background: rgba(148,163,184,0.16); border: 1px solid var(--card-border); }
-        footer { margin: 70px 0 40px; padding-top: 24px; border-top: 1px solid var(--card-border); color: var(--muted); font-size: 13px; text-align: center; }
-        footer a { color: var(--muted); }
-        @media (max-width: 760px) {
-            .spotlight { grid-template-columns: 1fr; }
-            .feature-list { grid-template-columns: 1fr; }
-            .purpose-grid { grid-template-columns: 1fr; }
-            nav a { margin-left: 10px; }
-        }
-    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLHB1RM91X"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-ZLHB1RM91X');</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2566168559344675" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wrap">
-        <header>
-            <div class="brand"><span class="dot"></span> AgenticFabWorks</div>
-            <nav>
-                <a href="#services">서비스</a>
-                <a href="#skct">SKCT 도구</a>
-                <a href="#policy">운영 기준</a>
-                <a href="https://github.com/AgenticLab-SH" target="_blank" rel="noopener">GitHub</a>
+    <header class="site-header">
+        <div class="shell header-inner">
+            <a class="brand" href="./" aria-label="AgenticFabWorks 홈">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <span><small>Independent web tools</small>AgenticFabWorks</span>
+            </a>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="siteNav" aria-label="메뉴 열기"><span></span></button>
+            <nav class="site-nav" id="siteNav" data-site-nav aria-label="주요 메뉴">
+                <a href="#skct">SKCT</a>
+                <a href="#tools">전체 도구</a>
+                <a href="skct/guide/">사용법</a>
+                <a href="contact/">문의</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
+    <main>
         <section class="hero">
-            <span class="eyebrow">직접 만들고 운영하는 무료 웹 도구</span>
-            <h1>반복 작업은 줄이고,<br><span class="grad">필요한 결과는 더 빠르게</span></h1>
-            <p class="lead">AgenticFabWorks는 SKCT 온라인 연습을 비롯해 취업 준비, 일정 관리, 금융·생활 계산에 바로 쓸 수 있는 웹 도구를 만들고 운영합니다.</p>
-            <div class="cta-row">
-                <a class="btn btn-primary" href="https://skct.agenticfabworks.com/">SKCT 연습 도구 열기</a>
-                <a class="btn btn-ghost" href="skct/">SKCT 소개 보기</a>
+            <div class="shell hero-grid">
+                <div data-reveal>
+                    <span class="eyebrow">작은 불편을 줄이는 웹 도구</span>
+                    <h1>필요한 계산과 연습을,<br><span class="gradient-text">바로 시작하세요.</span></h1>
+                    <p class="hero-copy">AgenticFabWorks는 취업 준비와 일상에서 자주 쓰는 도구를 직접 만들고 운영합니다. 복잡한 가입이나 설치 없이 필요한 기능만 골라 쓰면 됩니다.</p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="https://skct.agenticfabworks.com/">SKCT 연습 시작</a>
+                        <a class="button" href="#tools">도구 둘러보기</a>
+                    </div>
+                    <p class="hero-note">대부분의 기본 기능은 무료이며, 각 도구는 모바일과 PC 화면에 맞춰 동작합니다.</p>
+                </div>
+                <div class="visual-stage" data-depth-stage aria-label="AgenticFabWorks의 도구 화면을 표현한 모션 그래픽" data-reveal>
+                    <span class="ribbon one"></span><span class="ribbon two"></span><span class="ribbon three"></span>
+                    <div class="tool-stack">
+                        <article class="float-card main">
+                            <div class="mini-head"><span>AGENTICFABWORKS</span><b>TOOLS 17</b></div>
+                            <h2 class="mini-title">필요한 순간에<br>바로 여는 도구</h2>
+                            <div class="mini-row"><span>SKCT 연습</span><span>금융 계산</span><span>일정 관리</span></div>
+                        </article>
+                        <article class="float-card side"><span class="pulse-dot"></span><small>지금 바로 사용</small><strong>설치 없음</strong></article>
+                        <article class="float-card bottom"><small>대표 서비스</small><strong>SKCT Tool</strong></article>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <h2 class="section-title">목적별로 바로 찾기</h2>
-        <section class="purpose-grid" aria-label="도구 선택 안내">
-            <article class="purpose-card">
-                <h2>SKCT·취업 준비</h2>
-                <p>SKCT 온라인 연습, 글자수 확인, 연봉 실수령액 계산처럼 지원과 시험 준비에 필요한 도구를 모았습니다.</p>
-            </article>
-            <article class="purpose-card">
-                <h2>일정·생활 계산</h2>
-                <p>D-Day, 만 나이, 단위·평수·퍼센트 변환처럼 자주 찾지만 매번 계산하기 번거로운 작업을 줄입니다.</p>
-            </article>
-            <article class="purpose-card">
-                <h2>금융 계산</h2>
-                <p>복리, 대출 이자, 평단가, 환율과 손실 복구율을 입력 즉시 계산하고 비교할 수 있습니다.</p>
-            </article>
-        </section>
-
-        <h2 class="section-title" id="skct">대표 서비스</h2>
-        <section class="spotlight" aria-label="SKCT 온라인 연습 도구 소개">
-            <article class="panel">
-                <h2>SKCT 온라인 연습 도구</h2>
-                <p>
-                    사용자가 가진 문제 자료를 실제 온라인 검사 흐름에 맞춰 연습할 수 있도록 만든 웹 도구입니다.
-                    OMR, 과목별 타이머, 메모장, 그림판, 계산기, 채점, 문항별 통계를 한 화면에서 제공합니다.
-                </p>
-                <ul class="feature-list">
-                    <li>일반 모드: OMR·타이머·메모장·계산기 무료 제공</li>
-                    <li>고급 모드: 실제에 가까운 폭과 우측 여백, 팝업 연습 배치</li>
-                    <li>복기 기능: 정답 입력, CBT 정답률, 과목별 통계, TXT/CSV 저장</li>
-                    <li>기록 보관함: 회차 기록, 성장 그래프, 오답노트, 복기 메모 저장</li>
-                </ul>
-                <div class="notice">
-                    SK그룹 또는 SKCT 공식 운영기관과 제휴된 서비스가 아닌 개인 제작 연습 도구입니다. 공식 문제나 기출 문제를 제공하지 않습니다.
+        <section class="section" id="skct">
+            <div class="shell feature-shell" data-reveal>
+                <div class="feature-copy">
+                    <span class="section-kicker">Featured · SKCT</span>
+                    <h2>가지고 있는 문제로,<br>화면 도구까지 연습하세요.</h2>
+                    <p>문제 PDF나 E-book 옆에 연습 도구를 띄우고 타이머, 화면 계산기, 메모장과 그림판을 사용해 보세요. 기본 기능은 모두 무료입니다.</p>
+                    <div class="feature-points"><span>타이머·계산기·메모·그림판</span><span>PC 팝업 배치 지원</span><span>선택형 채점과 복기</span><span>고급 회차·시간 분석</span></div>
+                    <div class="actions"><a class="button primary" href="https://skct.agenticfabworks.com/">무료 연습 도구 열기</a><a class="button" href="skct/">자세히 보기</a></div>
                 </div>
-            </article>
-            <aside class="panel">
-                <h3>SKCT 문서 바로가기</h3>
-                <p>사용법, 기능 범위, 문의와 책임 범위를 루트 도메인에서도 바로 확인할 수 있게 연결했습니다.</p>
-                <div class="doc-links">
-                    <a href="skct/">루트 SKCT 소개</a>
-                    <a href="skct/guide/">루트 사용 가이드</a>
-                    <a href="skct/faq/">루트 FAQ</a>
-                    <a href="https://skct.agenticfabworks.com/about/">상세 소개</a>
-                    <a href="https://skct.agenticfabworks.com/guide/">상세 연습 가이드</a>
-                    <a href="https://skct.agenticfabworks.com/faq/">상세 FAQ</a>
-                    <a href="https://skct.agenticfabworks.com/pricing/">고급 기능 안내</a>
-                    <a href="contact/">문의하기</a>
+                <div class="practice-preview" aria-hidden="true">
+                    <div class="preview-bar"><i></i><i></i><i></i></div>
+                    <div class="preview-body">
+                        <div class="preview-paper"><strong>문제 PDF · 3 / 12</strong><div class="preview-lines"><i></i><i></i><i></i></div></div>
+                        <div class="preview-tools"><div class="preview-timer"><span><small>전체 시간</small><strong>74:26</strong></span><span><small>자료해석</small><strong>14:26</strong></span></div><div class="preview-pad">조건 표시 → 필요한 값만 계산</div><div class="preview-calc"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+                    </div>
                 </div>
-            </aside>
+            </div>
         </section>
 
-        <h2 class="section-title" id="policy">운영 기준</h2>
-        <section class="spotlight" aria-label="운영 기준과 광고 원칙">
-            <article class="panel">
-                <h3>콘텐츠 기준</h3>
-                <p>
-                    AgenticFabWorks의 문서와 도구 설명은 직접 작성한 안내입니다. 각 도구는 사용자가 목적을 빠르게 달성하도록 설계하며,
-                    기능이 불안정하거나 안내가 부족한 화면은 정식 기능처럼 홍보하지 않습니다.
-                </p>
-            </article>
-            <article class="panel">
-                <h3>광고 기준</h3>
-                <p>
-                    광고는 소개, 가이드, FAQ처럼 읽는 페이지 위주로 제한합니다. 일반 모드 쉬는 시간 배너는 승인 뒤 정책을 지키는 범위에서만 검토하고, SKCT 고급 모드, 팝업 풀이창, 채팅, 보관함처럼 집중 조작이나 개인 데이터가 있는 화면에는 광고를 넣지 않습니다.
-                </p>
-            </article>
+        <section class="section" id="tools">
+            <div class="shell">
+                <div class="section-head" data-reveal>
+                    <div><span class="section-kicker">All tools</span><h2 class="section-title">필요한 도구만 골라보세요.</h2></div>
+                    <div class="tool-filter" aria-label="도구 종류 필터">
+                        <button class="filter-button" type="button" data-tool-filter="all" aria-pressed="true">전체</button>
+                        <button class="filter-button" type="button" data-tool-filter="career" aria-pressed="false">취업·일정</button>
+                        <button class="filter-button" type="button" data-tool-filter="finance" aria-pressed="false">금융</button>
+                        <button class="filter-button" type="button" data-tool-filter="life" aria-pressed="false">생활</button>
+                    </div>
+                </div>
+                <p id="toolFilterStatus" class="sr-only" aria-live="polite">17개 도구가 표시됩니다.</p>
+                <div class="tools-grid" data-reveal>
+                    <a class="tool-card" data-tool-category="career" href="https://skct.agenticfabworks.com/"><span class="tool-code">SK</span><h3>SKCT 온라인 연습</h3><p>문제 자료 옆에서 타이머와 화면 도구를 연습합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="career" href="https://tools.agenticfabworks.com/charcount/"><span class="tool-code">글</span><h3>글자수 세기</h3><p>공백 포함·제외, 바이트와 단어 수를 바로 확인합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="career" href="https://tools.agenticfabworks.com/salary/"><span class="tool-code">₩</span><h3>연봉 실수령액</h3><p>급여와 공제 항목을 기준으로 월 실수령액을 계산합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="career" href="https://tools.agenticfabworks.com/dday/"><span class="tool-code">D</span><h3>D-Day 계산기</h3><p>시험, 면접과 입사일까지 남은 날짜를 확인합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="finance" href="https://tools.agenticfabworks.com/average/"><span class="tool-code">평단</span><h3>주식 평단가</h3><p>추가 매수 뒤 평균단가와 목표 평단을 계산합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="finance" href="https://tools.agenticfabworks.com/compound/"><span class="tool-code">복리</span><h3>복리 계산기</h3><p>원금, 이율, 기간과 적립액으로 만기 금액을 봅니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="finance" href="https://tools.agenticfabworks.com/loan/"><span class="tool-code">대출</span><h3>대출 이자</h3><p>상환 방식에 따른 월 납입액과 총이자를 비교합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="finance" href="https://tools.agenticfabworks.com/recovery/"><span class="tool-code">회복</span><h3>손실 복구율</h3><p>손실 뒤 원금 회복에 필요한 상승률을 계산합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="finance" href="https://tools.agenticfabworks.com/exchange/"><span class="tool-code">FX</span><h3>환율 계산기</h3><p>통화 금액을 원하는 환율로 빠르게 환산합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="finance" href="https://tools.agenticfabworks.com/kiwoom-screener/"><span class="tool-code">조건</span><h3>키움 조건검색식</h3><p>조건식을 항목별로 이해하고 조합할 수 있게 돕습니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="life" href="https://tools.agenticfabworks.com/age/"><span class="tool-code">나이</span><h3>만 나이 계산기</h3><p>생년월일로 만 나이와 다음 생일까지를 확인합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="life" href="https://tools.agenticfabworks.com/vat/"><span class="tool-code">VAT</span><h3>부가세 계산기</h3><p>공급가액과 합계 금액을 양방향으로 계산합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="life" href="https://tools.agenticfabworks.com/severance/"><span class="tool-code">퇴직</span><h3>퇴직금 계산기</h3><p>근무 기간과 급여를 기준으로 예상 금액을 봅니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="life" href="https://tools.agenticfabworks.com/bmi/"><span class="tool-code">BMI</span><h3>BMI 계산기</h3><p>키와 몸무게로 체질량지수와 표준체중을 확인합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="life" href="https://tools.agenticfabworks.com/pyeong/"><span class="tool-code">㎡</span><h3>평수 계산기</h3><p>제곱미터와 평을 서로 변환합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="life" href="https://tools.agenticfabworks.com/percent/"><span class="tool-code">%</span><h3>퍼센트 계산기</h3><p>증감률, 비율과 일부 값을 빠르게 계산합니다.</p><span class="arrow">↗</span></a>
+                    <a class="tool-card" data-tool-category="life" href="https://tools.agenticfabworks.com/unit/"><span class="tool-code">단위</span><h3>단위 변환기</h3><p>자주 쓰는 길이와 무게 단위를 변환합니다.</p><span class="arrow">↗</span></a>
+                </div>
+            </div>
         </section>
 
-        <h2 class="section-title" id="services">제작된 도구</h2>
-        <div class="grid">
-            <a class="card live" href="https://skct.agenticfabworks.com/">
-                <div class="ico">📝</div>
-                <span class="badge on">LIVE</span>
-                <h3>SKCT 온라인 연습 도구</h3>
-                <p>SK그룹 인적성검사(SKCT)를 실전 환경으로 연습. OMR·다중 타이머·자동 채점·통계.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/salary/">
-                <div class="ico">💰</div>
-                <span class="badge on">LIVE</span>
-                <h3>연봉 실수령액 계산기</h3>
-                <p>2026년 기준 4대보험·소득세를 반영한 월 실수령액을 즉시 계산.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/dday/">
-                <div class="ico">📅</div>
-                <span class="badge on">LIVE</span>
-                <h3>D-Day 계산기</h3>
-                <p>시험·면접·입사일까지 남은 날짜를 한눈에. 여러 일정 동시 관리.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/age/">
-                <div class="ico">🎂</div>
-                <span class="badge on">LIVE</span>
-                <h3>만 나이 계산기</h3>
-                <p>생년월일로 만 나이·연 나이를 즉시 계산. 다음 생일까지 D-day도 확인.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/charcount/">
-                <div class="ico">🔤</div>
-                <span class="badge on">LIVE</span>
-                <h3>글자수 세기</h3>
-                <p>자소서·이력서 글자수를 공백 포함/제외로 실시간 계산. 바이트·단어·줄 수까지.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/average/">
-                <div class="ico">📈</div>
-                <span class="badge on">LIVE</span>
-                <h3>주식 평단가 계산기</h3>
-                <p>물타기 후 평균단가와 수익률을 즉시 계산. 목표 평단가 추가 매수량까지.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/compound/">
-                <div class="ico">💹</div>
-                <span class="badge on">LIVE</span>
-                <h3>복리 계산기</h3>
-                <p>원금·이율·기간·월적립으로 복리 만기금액과 이자를 계산. 단리 비교까지.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/loan/">
-                <div class="ico">🏦</div>
-                <span class="badge on">LIVE</span>
-                <h3>대출 이자 계산기</h3>
-                <p>원리금균등·원금균등 월 상환액과 총 이자를 즉시 계산. 방식 비교까지.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/vat/">
-                <div class="ico">🧾</div>
-                <span class="badge on">LIVE</span>
-                <h3>부가세 계산기</h3>
-                <p>공급가액·합계금액 부가가치세 10%를 양방향 자동 계산.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/severance/">
-                <div class="ico">💼</div>
-                <span class="badge on">LIVE</span>
-                <h3>퇴직금 계산기</h3>
-                <p>입사일·퇴사일과 급여로 평균임금 기준 예상 퇴직금을 계산.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/bmi/">
-                <div class="ico">⚖️</div>
-                <span class="badge on">LIVE</span>
-                <h3>BMI 계산기</h3>
-                <p>키·몸무게로 체질량지수와 비만도, 표준체중을 즉시 계산.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/pyeong/">
-                <div class="ico">📐</div>
-                <span class="badge on">LIVE</span>
-                <h3>평수 계산기</h3>
-                <p>제곱미터(㎡)와 평을 양방향으로 즉시 변환. 아파트 평형 참조까지.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/percent/">
-                <div class="ico">％</div>
-                <span class="badge on">LIVE</span>
-                <h3>퍼센트 계산기</h3>
-                <p>비율·할인가·증감률을 한 번에 계산하는 퍼센트 계산기.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/recovery/">
-                <div class="ico">🔻</div>
-                <span class="badge on">LIVE</span>
-                <h3>손실 복구 계산기</h3>
-                <p>손실률을 입력하면 본전 회복에 필요한 수익률을 계산. 손실의 비대칭.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/kiwoom-screener/">
-                <div class="ico">🔎</div>
-                <span class="badge on">LIVE</span>
-                <h3>키움 조건검색식 가이드</h3>
-                <p>키움 조건검색 전체 항목을 카테고리별로 정리. 검색으로 바로 찾기.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/unit/">
-                <div class="ico">📏</div>
-                <span class="badge on">LIVE</span>
-                <h3>단위 변환기</h3>
-                <p>길이·무게·온도·면적·부피·속도·데이터 단위를 즉시 변환.</p>
-            </a>
-            <a class="card live" href="https://tools.agenticfabworks.com/exchange/">
-                <div class="ico">💱</div>
-                <span class="badge on">LIVE</span>
-                <h3>환율 계산기</h3>
-                <p>실시간 기준 환율로 원화↔달러·엔·유로·위안을 즉시 변환.</p>
-            </a>
-        </div>
+        <section class="section">
+            <div class="shell">
+                <div class="section-head" data-reveal><div><span class="section-kicker">How we operate</span><h2 class="section-title">쓸 때 방해되지 않도록.</h2></div><p class="section-copy">기능보다 설명이 앞서지 않게 하고, 집중이 필요한 화면과 광고·안내 영역을 분리합니다.</p></div>
+                <div class="principles" data-reveal>
+                    <article class="principle"><b>필요한 기능만</b><p>정식으로 동작하는 기능만 노출하고, 준비 중인 기능은 미리 홍보하지 않습니다.</p></article>
+                    <article class="principle"><b>데이터는 최소한으로</b><p>도구 제공과 문의 처리에 필요한 범위만 다루고 삭제 요청 창구를 운영합니다.</p></article>
+                    <article class="principle"><b>집중 화면은 조용하게</b><p>풀이와 개인 기록 화면에는 광고를 두지 않고 문서형 페이지와 분리합니다.</p></article>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <footer>
-            <p>© 2026 AgenticFabWorks · <a href="privacy/">개인정보 처리 안내</a> · <a href="terms/">이용 안내</a> · <a href="contact/">문의</a></p>
-        </footer>
-    </div>
+    <footer class="site-footer">
+        <div class="shell footer-inner"><span>© <span data-current-year>2026</span> AgenticFabWorks</span><nav class="footer-links" aria-label="운영 정보"><a href="skct/">SKCT 소개</a><a href="privacy/">개인정보</a><a href="terms/">이용 안내</a><a href="contact/">문의</a><a href="https://github.com/AgenticLab-SH" target="_blank" rel="noopener">GitHub</a></nav></div>
+    </footer>
+    <script src="site.js?v=2026071101" defer></script>
 </body>
 </html>
