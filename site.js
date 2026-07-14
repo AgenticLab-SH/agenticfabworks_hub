@@ -40,7 +40,7 @@
         });
         if (!filterStatus) return;
         if (query) filterStatus.textContent = visible ? `검색 결과 ${visible}개 도구` : '일치하는 도구가 없습니다.';
-        else if (activeFilter === 'featured') filterStatus.textContent = '자주 쓰는 6개 도구를 먼저 보여드립니다.';
+        else if (activeFilter === 'featured') filterStatus.textContent = '자주 쓰는 7개 도구를 먼저 보여드립니다.';
         else filterStatus.textContent = `${visible}개 도구가 표시됩니다.`;
     };
 
