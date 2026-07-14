@@ -14,6 +14,7 @@ The representative service is the SKCT online practice tool.
 - Privacy: https://agenticfabworks.com/privacy/
 - Terms: https://agenticfabworks.com/terms/
 - Live SKCT tool: https://skct.agenticfabworks.com/
+- Calendar Circle: https://calendar.agenticfabworks.com/
 
 ## Service Summary
 
@@ -22,6 +23,8 @@ The advanced mode stores sessions, per-question time, wrong-answer reasons, revi
 It does not provide official SKCT questions, past questions, or copyrighted problem text.
 It is not affiliated with SK Group or any official SKCT operator.
 The real online exam does not use an OMR sheet. The site's answer record is an optional convenience for scoring personal practice material.
+
+Calendar Circle is a mobile-friendly circular schedule planner. It supports direct time-block adjustment, cascading delays, chronological lists, focus timing, and day, week, and month templates.
 
 ## Advertising Principle
 
