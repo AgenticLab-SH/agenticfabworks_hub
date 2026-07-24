@@ -29,3 +29,4 @@ User-agent: Yeti
 Allow: /
 
 Sitemap: https://agenticfabworks.com/sitemap.xml
+Sitemap: https://agenticfabworks.com/sitemap-index.xml

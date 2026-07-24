@@ -9,7 +9,11 @@ The representative service is the SKCT online practice tool.
 - Home: https://agenticfabworks.com/
 - SKCT representative service: https://agenticfabworks.com/skct/
 - SKCT guide: https://agenticfabworks.com/skct/guide/
+- SKCT browser and screen checklist: https://agenticfabworks.com/skct/browser-checklist/
+- SKCT session recording method: https://agenticfabworks.com/skct/practice-system/
+- SKCT record interpretation guide: https://agenticfabworks.com/skct/record-reading/
 - SKCT FAQ: https://agenticfabworks.com/skct/faq/
+- About the maker and editorial policy: https://agenticfabworks.com/about/
 - Contact: https://agenticfabworks.com/contact/
 - Privacy: https://agenticfabworks.com/privacy/
 - Terms: https://agenticfabworks.com/terms/
@@ -28,5 +32,5 @@ Calendar Circle is a mobile-friendly circular schedule planner. It supports dire
 
 ## Advertising Principle
 
-Ads are intended for document-like pages such as guides, FAQ, introduction, and policy pages.
-Ads are not intended for advanced mode, popup practice windows, chat, archive, or focused practice screens.
+Ads are limited to substantial content pages such as the SKCT introduction, guides, and FAQ.
+Ads are not loaded on contact, privacy, terms, advanced mode, popup practice windows, chat, archive, or focused practice screens.
