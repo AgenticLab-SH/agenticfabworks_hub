@@ -1,3 +1,5 @@
+// Live-edit patch: keep the edited row responsive without waiting for blur/change.
+updateItemFromInput=function(e){let tr=e.target.closest('tr');if(!tr)return;let x=S.items.find(y=>y.id===tr.dataset.id),k=e.target.dataset.k;if(!x||!k)return;let v=e.target.type==='checkbox'?e.target.checked:e.target.value;if(['amount','qty','priority'].includes(k))v=+v||0;x[k]=v;S.updated=Date.now();localStorage.setItem(KEY,JSON.stringify(S));if(tr.children[9])tr.children[9].textContent=x.freq==='일회성'?'-':W(mv(x));if(['priority','part','type','freq','start','end','active'].includes(k)){renderItems()}fastRefresh()};
 PARTS.forEach(x=>{partFilter.add(new Option(x,x));addPart.add(new Option(x,x))});
 for(let y=2026;y<=2031;y++)cashYear.add(new Option(y,y));
 routeMonth.value=S.settings.start;cashMonth.value=S.settings.start;cashYear.value=S.settings.start.slice(0,4);addStart.value=S.settings.start;
